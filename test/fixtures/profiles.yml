@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  bio: MyText
+  date_of_birth: 2025-08-03
+  is_rider: false
+  is_photographer: false
+  user: one
+
+two:
+  username: MyString
+  bio: MyText
+  date_of_birth: 2025-08-03
+  is_rider: false
+  is_photographer: false
+  user: two

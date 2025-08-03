@@ -1,26 +1,20 @@
 <div class="min-h-screen bg-ocean-900 relative overflow-hidden">
-  <!-- Y2K Tech Pattern Background -->
   <div class="absolute inset-0 opacity-10">
     <div class="absolute top-10 left-10 w-32 h-32 border-2 border-mint-400 rotate-45"></div>
     <div class="absolute top-32 right-20 w-24 h-24 border-2 border-coral-400 rotate-12"></div>
     <div class="absolute bottom-20 left-1/4 w-28 h-28 border-2 border-wave-400 -rotate-12"></div>
     <div class="absolute bottom-40 right-10 w-20 h-20 border-2 border-mint-400 rotate-45"></div>
   </div>
-  
-  <!-- Scan Lines Effect -->
   <div class="absolute inset-0 bg-gradient-to-b from-transparent via-ocean-700/5 to-transparent bg-repeat-y opacity-30" style="background-size: 100% 4px;"></div>
   
   <div class="container mx-auto px-4 py-8 relative z-10">
     
-    <!-- Header Section -->
     <header class="text-center mb-16">
-      <!-- Logo with Surf Magazine Style -->
       <div class="inline-flex items-center justify-center w-32 h-32 mb-8 bg-gradient-to-br from-wave-100 to-wave-200 rounded-full border-8 border-coral-500 shadow-2xl relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/40 to-transparent"></div>
         <%= image_tag "logo.png", class: "w-20 h-20 relative z-10 filter drop-shadow-lg", alt: "Bodyboard Archive Logo" %>
       </div>
-      
-      <!-- Title with Magazine Style -->
+    
       <h1 class="text-5xl md:text-8xl font-black mb-6 uppercase tracking-wider">
         <span class="text-transparent bg-clip-text bg-gradient-to-r from-coral-500 via-mint-500 to-ocean-600 transform -skew-x-6 inline-block">
           BODYBOARD
@@ -30,8 +24,7 @@
           ARCHIVE
         </span>
       </h1>
-      
-      <!-- Subtitle with Magazine Style -->
+
       <div class="bg-gradient-to-r from-coral-500 to-mint-500 p-1 rounded-2xl mb-8 max-w-3xl mx-auto shadow-xl">
         <div class="bg-wave-100 rounded-xl p-6">
           <p class="text-2xl md:text-3xl font-black text-ocean-900 uppercase tracking-wider mb-2">
@@ -42,19 +35,15 @@
           </p>
         </div>
       </div>
-      
-      <!-- Buttons with Y2K Style -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <button class="bg-gradient-to-r from-coral-500 to-coral-600 hover:from-coral-400 hover:to-coral-500 text-white px-6 py-3 font-bold uppercase tracking-wider border-2 border-coral-300 shadow-lg hover:shadow-coral-500/50 transition-all duration-200">
-          [BROWSE PHOTOS]
+          BROWSE PHOTOS
         </button>
         <button class="bg-gradient-to-r from-mint-500 to-mint-600 hover:from-mint-400 hover:to-mint-500 text-white px-6 py-3 font-bold uppercase tracking-wider border-2 border-mint-300 shadow-lg hover:shadow-mint-500/50 transition-all duration-200">
-          [PLAY VIDEOS]
+          PLAY VIDEOS
         </button>
       </div>
     </header>
-
-    <!-- Featured Content Grid -->
     <section class="mb-16">
       <div class="text-center mb-12">
         <h2 class="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-coral-400 via-wave-200 to-mint-400 mb-4 transform -skew-x-6 uppercase tracking-wider">
@@ -65,7 +54,6 @@
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Photo Card -->
         <div class="group bg-wave-100 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-4 border-coral-400">
           <div class="aspect-[4/3] bg-gradient-to-br from-mint-400 to-ocean-500 relative overflow-hidden">
             <div class="absolute top-3 left-3">
@@ -93,7 +81,6 @@
           </div>
         </div>
 
-        <!-- Video Card -->
         <div class="group bg-wave-100 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-4 border-mint-400">
           <div class="aspect-[4/3] bg-gradient-to-br from-coral-400 to-ocean-600 relative overflow-hidden">
             <div class="absolute top-3 left-3">
@@ -127,8 +114,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Rider Profile Card -->
         <div class="group bg-wave-100 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-4 border-ocean-400">
           <div class="aspect-[4/3] bg-gradient-to-br from-ocean-400 to-mint-500 relative overflow-hidden">
             <div class="absolute top-3 left-3">
@@ -157,8 +142,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Categories Section -->
     <section class="mb-16">
       <div class="text-center mb-12">
         <h2 class="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-mint-400 via-coral-400 to-wave-200 mb-4 transform skew-x-3 uppercase tracking-wider">
@@ -207,13 +190,13 @@
             Share your sessions, connect with legends, and become part of bodyboard history!
           </p>
           
-          <div class="flex flex-col gap-6 justify-center">
-            <button class="bg-coral-500 hover:bg-coral-600 text-white px-8 py-4 text-xl font-black uppercase tracking-wider shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:rotate-1 transition-all duration-300 border-4 border-coral-400">
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <%= link_to new_user_registration_path, class: "bg-coral-500 hover:bg-coral-600 text-white px-8 py-4 text-xl font-black uppercase tracking-wider shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:rotate-1 transition-all duration-300 border-4 border-coral-400 text-center no-underline" do %>
               JOIN THE CLUB
-            </button>
-            <button class="bg-mint-500 hover:bg-mint-600 text-white px-8 py-4 text-xl font-black uppercase tracking-wider shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:-rotate-1 transition-all duration-300 border-4 border-mint-400">
+            <% end %>
+            <%= link_to new_user_session_path, class: "bg-mint-500 hover:bg-mint-600 text-white px-8 py-4 text-xl font-black uppercase tracking-wider shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:-rotate-1 transition-all duration-300 border-4 border-mint-400 text-center no-underline" do %>
               ALREADY A MEMBER?
-            </button>
+            <% end %>
           </div>
         </div>
       </div>
