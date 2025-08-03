@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ocean-50: oklch(0.97 0.02 220);
+  --color-ocean-100: oklch(0.94 0.05 220);
+  --color-ocean-200: oklch(0.88 0.08 220);
+  --color-ocean-300: oklch(0.78 0.12 220);
+  --color-ocean-400: oklch(0.68 0.15 220);
+  --color-ocean-500: oklch(0.55 0.18 220);
+  --color-ocean-600: oklch(0.45 0.15 220);
+  --color-ocean-700: oklch(0.35 0.12 220);
+  --color-ocean-800: oklch(0.28 0.08 220);
+  --color-ocean-900: oklch(0.22 0.05 220);
+  
+  --color-wave-50: oklch(0.98 0.02 85);
+  --color-wave-100: oklch(0.95 0.05 85);
+  --color-wave-200: oklch(0.92 0.08 85);
+  --color-wave-300: oklch(0.88 0.12 85);
+  --color-wave-400: oklch(0.82 0.15 85);
+  --color-wave-500: oklch(0.75 0.18 85);
+  --color-wave-600: oklch(0.68 0.15 85);
+  --color-wave-700: oklch(0.58 0.12 85);
+  --color-wave-800: oklch(0.48 0.08 85);
+  --color-wave-900: oklch(0.38 0.05 85);
+  
+  --color-coral-50: oklch(0.96 0.03 40);
+  --color-coral-100: oklch(0.92 0.06 40);
+  --color-coral-200: oklch(0.86 0.12 40);
+  --color-coral-300: oklch(0.78 0.18 40);
+  --color-coral-400: oklch(0.70 0.22 40);
+  --color-coral-500: oklch(0.62 0.25 40);
+  --color-coral-600: oklch(0.54 0.22 40);
+  --color-coral-700: oklch(0.46 0.18 40);
+  --color-coral-800: oklch(0.38 0.12 40);
+  --color-coral-900: oklch(0.32 0.08 40);
+  
+  --color-mint-50: oklch(0.96 0.03 160);
+  --color-mint-100: oklch(0.92 0.06 160);
+  --color-mint-200: oklch(0.86 0.12 160);
+  --color-mint-300: oklch(0.78 0.18 160);
+  --color-mint-400: oklch(0.70 0.22 160);
+  --color-mint-500: oklch(0.62 0.25 160);
+  --color-mint-600: oklch(0.54 0.22 160);
+  --color-mint-700: oklch(0.46 0.18 160);
+  --color-mint-800: oklch(0.38 0.12 160);
+  --color-mint-900: oklch(0.32 0.08 160);
+}

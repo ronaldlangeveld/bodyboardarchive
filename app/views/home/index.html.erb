@@ -1,0 +1,223 @@
+<div class="min-h-screen bg-ocean-900 relative overflow-hidden">
+  <!-- Y2K Tech Pattern Background -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-10 left-10 w-32 h-32 border-2 border-mint-400 rotate-45"></div>
+    <div class="absolute top-32 right-20 w-24 h-24 border-2 border-coral-400 rotate-12"></div>
+    <div class="absolute bottom-20 left-1/4 w-28 h-28 border-2 border-wave-400 -rotate-12"></div>
+    <div class="absolute bottom-40 right-10 w-20 h-20 border-2 border-mint-400 rotate-45"></div>
+  </div>
+  
+  <!-- Scan Lines Effect -->
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-ocean-700/5 to-transparent bg-repeat-y opacity-30" style="background-size: 100% 4px;"></div>
+  
+  <div class="container mx-auto px-4 py-8 relative z-10">
+    
+    <!-- Header Section -->
+    <header class="text-center mb-16">
+      <!-- Logo with Surf Magazine Style -->
+      <div class="inline-flex items-center justify-center w-32 h-32 mb-8 bg-gradient-to-br from-wave-100 to-wave-200 rounded-full border-8 border-coral-500 shadow-2xl relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/40 to-transparent"></div>
+        <%= image_tag "logo.png", class: "w-20 h-20 relative z-10 filter drop-shadow-lg", alt: "Bodyboard Archive Logo" %>
+      </div>
+      
+      <!-- Title with Magazine Style -->
+      <h1 class="text-5xl md:text-8xl font-black mb-6 uppercase tracking-wider">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-coral-500 via-mint-500 to-ocean-600 transform -skew-x-6 inline-block">
+          BODYBOARD
+        </span>
+        <br>
+        <span class="text-4xl md:text-6xl text-wave-100 font-black tracking-widest transform skew-x-3 inline-block">
+          ARCHIVE
+        </span>
+      </h1>
+      
+      <!-- Subtitle with Magazine Style -->
+      <div class="bg-gradient-to-r from-coral-500 to-mint-500 p-1 rounded-2xl mb-8 max-w-3xl mx-auto shadow-xl">
+        <div class="bg-wave-100 rounded-xl p-6">
+          <p class="text-2xl md:text-3xl font-black text-ocean-900 uppercase tracking-wider mb-2">
+            THE ULTIMATE STASH
+          </p>
+          <p class="text-lg md:text-xl text-ocean-700 font-bold italic">
+            Where legends live forever and every session tells a story
+          </p>
+        </div>
+      </div>
+      
+      <!-- Buttons with Y2K Style -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button class="bg-gradient-to-r from-coral-500 to-coral-600 hover:from-coral-400 hover:to-coral-500 text-white px-6 py-3 font-bold uppercase tracking-wider border-2 border-coral-300 shadow-lg hover:shadow-coral-500/50 transition-all duration-200">
+          [BROWSE PHOTOS]
+        </button>
+        <button class="bg-gradient-to-r from-mint-500 to-mint-600 hover:from-mint-400 hover:to-mint-500 text-white px-6 py-3 font-bold uppercase tracking-wider border-2 border-mint-300 shadow-lg hover:shadow-mint-500/50 transition-all duration-200">
+          [PLAY VIDEOS]
+        </button>
+      </div>
+    </header>
+
+    <!-- Featured Content Grid -->
+    <section class="mb-16">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-coral-400 via-wave-200 to-mint-400 mb-4 transform -skew-x-6 uppercase tracking-wider">
+          FEATURED SESSIONS
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-coral-500 to-mint-500 mx-auto mb-2"></div>
+        <p class="text-wave-300 text-lg font-semibold italic">The sickest rides from around the globe</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Photo Card -->
+        <div class="group bg-wave-100 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-4 border-coral-400">
+          <div class="aspect-[4/3] bg-gradient-to-br from-mint-400 to-ocean-500 relative overflow-hidden">
+            <div class="absolute top-3 left-3">
+              <span class="bg-coral-500 text-white px-3 py-1 text-sm font-black uppercase tracking-wider shadow-lg transform -rotate-3">
+                SICK SHOT!
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <div class="bg-wave-100/90 text-ocean-900 px-2 py-1 text-xs font-bold rounded">
+                📸 PHOTO
+              </div>
+            </div>
+          </div>
+          <div class="p-6 bg-wave-100">
+            <h3 class="text-2xl font-black text-ocean-900 mb-2 uppercase tracking-wide">
+              EPIC BARREL
+            </h3>
+            <p class="text-ocean-700 mb-4 font-semibold">
+              Perfect Pipeline session captured by local lensman. This wave was absolutely firing!
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-coral-600 font-bold text-sm">by John Doe</span>
+              <span class="text-ocean-500 text-sm font-semibold">2 days ago</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Card -->
+        <div class="group bg-wave-100 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-4 border-mint-400">
+          <div class="aspect-[4/3] bg-gradient-to-br from-coral-400 to-ocean-600 relative overflow-hidden">
+            <div class="absolute top-3 left-3">
+              <span class="bg-mint-500 text-white px-3 py-1 text-sm font-black uppercase tracking-wider shadow-lg transform rotate-2">
+                GNARLY!
+              </span>
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-16 h-16 bg-wave-100/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-8 h-8 text-ocean-900 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <div class="bg-wave-100/90 text-ocean-900 px-2 py-1 text-xs font-bold rounded">
+                🎥 VIDEO
+              </div>
+            </div>
+          </div>
+          <div class="p-6 bg-wave-100">
+            <h3 class="text-2xl font-black text-ocean-900 mb-2 uppercase tracking-wide">
+              CHAMPIONSHIP
+            </h3>
+            <p class="text-ocean-700 mb-4 font-semibold">
+              Insane final heat footage. Watch the world's best throw down in perfect surf!
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-mint-600 font-bold text-sm">by Jane Smith</span>
+              <span class="text-ocean-500 text-sm font-semibold">1 week ago</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rider Profile Card -->
+        <div class="group bg-wave-100 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-4 border-ocean-400">
+          <div class="aspect-[4/3] bg-gradient-to-br from-ocean-400 to-mint-500 relative overflow-hidden">
+            <div class="absolute top-3 left-3">
+              <span class="bg-ocean-600 text-white px-3 py-1 text-sm font-black uppercase tracking-wider shadow-lg transform -rotate-1">
+                PRO RIDER
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3">
+              <div class="bg-wave-100/90 text-ocean-900 px-2 py-1 text-xs font-bold rounded">
+                🏄‍♂️ PROFILE
+              </div>
+            </div>
+          </div>
+          <div class="p-6 bg-wave-100">
+            <h3 class="text-2xl font-black text-ocean-900 mb-2 uppercase tracking-wide">
+              MIKE RODRIGUEZ
+            </h3>
+            <p class="text-ocean-700 mb-4 font-semibold">
+              Hawaiian pro with 15 years of charging the heaviest waves on the planet!
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-ocean-600 font-bold text-sm">Pro Status</span>
+              <span class="text-mint-600 text-sm font-semibold">Active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="mb-16">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-mint-400 via-coral-400 to-wave-200 mb-4 transform skew-x-3 uppercase tracking-wider">
+          EXPLORE THE STOKE
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-mint-500 to-coral-500 mx-auto mb-2"></div>
+        <p class="text-wave-300 text-lg font-semibold italic">Dive into the ultimate bodyboard collection</p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="group bg-coral-500 rounded-xl p-8 text-center hover:bg-coral-400 transform hover:scale-105 hover:rotate-3 transition-all duration-300 cursor-pointer shadow-xl">
+          <div class="text-6xl mb-4 filter drop-shadow-lg">📸</div>
+          <h3 class="text-white font-black text-xl uppercase tracking-wider mb-2">PHOTOS</h3>
+          <p class="text-coral-100 font-bold text-sm">12,453 epic shots</p>
+        </div>
+        
+        <div class="group bg-mint-500 rounded-xl p-8 text-center hover:bg-mint-400 transform hover:scale-105 hover:-rotate-2 transition-all duration-300 cursor-pointer shadow-xl">
+          <div class="text-6xl mb-4 filter drop-shadow-lg">🎥</div>
+          <h3 class="text-white font-black text-xl uppercase tracking-wider mb-2">VIDEOS</h3>
+          <p class="text-mint-100 font-bold text-sm">3,421 sick clips</p>
+        </div>
+        
+        <div class="group bg-ocean-600 rounded-xl p-8 text-center hover:bg-ocean-500 transform hover:scale-105 hover:rotate-1 transition-all duration-300 cursor-pointer shadow-xl">
+          <div class="text-6xl mb-4 filter drop-shadow-lg">🏄‍♂️</div>
+          <h3 class="text-white font-black text-xl uppercase tracking-wider mb-2">RIDERS</h3>
+          <p class="text-ocean-100 font-bold text-sm">892 legends</p>
+        </div>
+        
+        <div class="group bg-wave-600 rounded-xl p-8 text-center hover:bg-wave-500 transform hover:scale-105 hover:-rotate-3 transition-all duration-300 cursor-pointer shadow-xl">
+          <div class="text-6xl mb-4 filter drop-shadow-lg">📷</div>
+          <h3 class="text-white font-black text-xl uppercase tracking-wider mb-2">SHOOTERS</h3>
+          <p class="text-wave-100 font-bold text-sm">156 lensmen</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="mb-12">
+      <div class="bg-gradient-to-r from-coral-500 via-mint-500 to-ocean-500 p-1 rounded-2xl shadow-2xl">
+        <div class="bg-wave-100 rounded-xl p-12 text-center">
+          <h2 class="text-4xl md:text-5xl font-black text-ocean-900 mb-4 uppercase tracking-wider transform -skew-x-3">
+            JOIN THE CREW!
+          </h2>
+          <div class="w-24 h-2 bg-gradient-to-r from-coral-500 to-mint-500 mx-auto mb-6 transform skew-x-12"></div>
+          <p class="text-xl md:text-2xl text-ocean-700 font-bold mb-8 italic">
+            Share your sessions, connect with legends, and become part of bodyboard history!
+          </p>
+          
+          <div class="flex flex-col gap-6 justify-center">
+            <button class="bg-coral-500 hover:bg-coral-600 text-white px-8 py-4 text-xl font-black uppercase tracking-wider shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:rotate-1 transition-all duration-300 border-4 border-coral-400">
+              JOIN THE CLUB
+            </button>
+            <button class="bg-mint-500 hover:bg-mint-600 text-white px-8 py-4 text-xl font-black uppercase tracking-wider shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:-rotate-1 transition-all duration-300 border-4 border-mint-400">
+              ALREADY A MEMBER?
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
